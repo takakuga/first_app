@@ -8,6 +8,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    Post.create(create: params[:content])
   end
 
 end
